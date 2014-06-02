@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fundamentalesandroid"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.example.fundamentalesandroid.FundamentalesAndroid_MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.fundamentalesandroid.PruebaDeCicloDeVida"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Prueba De Ciclo De Vida" >
+        </activity>
+        
+        <activity
+            android:name="PuebaDeTouchSimple"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Pueba De TouchSimple" >
+        </activity>
+        
+        <activity
+            android:name="PuebaDeMultitouch"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Pueba De Multitouch" >
+        </activity>
+        
+        <activity 
+            android:name="PrubaDeTeclado"
+            android:label="Prueba de Teclado"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            
+        </activity>
+        
+        <activity 
+            android:name="PruebaDeAcelerometro"
+            android:label="Prueba De Acelerometro"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            
+        </activity>
+        
+        <activity 
+            android:name="AssestsTest"
+            android:label="Assests Test"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            
+        </activity>
+        <activity 
+            android:name="PruebaDeAlmacenamientoExterno"
+            android:label="Prueba De Almacenamiento Externo"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            
+        </activity>
+        
+        <activity 
+            android:name="EfectoDeAudioSonido"
+            android:label="Efecto De Audio Y Sonido"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            
+        </activity>
+        
+        <activity 
+            android:name="AudioPlayerTest"
+            android:label="Audio Player Test"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            
+        </activity>
+        
+        <activity 
+            android:name="MediaPalyerTest"
+            android:label="Media Palyer Test"
+            android:configChanges="keyboard|keyboardHidden|orientation">            
+        </activity>
+        
+        <activity 
+            android:name="PruebaPantallaCompleta"
+            android:label="Prueba Pantalla Completa"            
+            android:configChanges="keyboard|keyboardHidden|orientation">            
+        </activity>
+        
+        <activity 
+            android:label="Render View Test"
+            android:name="RenderViewTest"
+            android:configChanges="keyboard|keyboardHidden|orientation">       
+            </activity>
+            <activity 
+                android:name="PruebaFiguras"
+                android:label="Prueba Figuras"
+                android:configChanges="keyboard|keyboardHidden|orientation">                
+            </activity>
+            
+            <activity 
+                android:name="EscojerImagenDibujar"
+                android:label="Escojer Imagen Dibujar"
+                android:configChanges="keyboard|keyboardHidden|orientation">                
+            </activity>
+            
+            <activity 
+                android:name="PruebadeTexto"
+                android:label="Prueba de Texto"
+                android:configChanges="keyboard|keyboardHidden|orientation">                
+            </activity>
+            
+            <activity 
+                android:name="SurfaceWiewTest"
+                android:label="SurfaceWiew Test"
+                android:configChanges="keyboard|keyboardHidden|orientation">                
+            </activity>
+        
+    </application>
+
+    
+
+</manifest>
